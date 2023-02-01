@@ -42,7 +42,7 @@ Docker networking creates a virtual network for containers to communicate with e
 #### 21. Can you explain the difference between a bridge network and a host network in Docker?
 - The bridge network is the default network in Docker and allows containers to communicate with each other and with the host system. It is isolated from the host network and creates a virtual network that is separate from the host. The host network mode allows the container to directly use the host network stack, bypassing the network isolation provided by the bridge network.
 #### 22. How do you expose ports in Docker?
-- You can expose ports in Docker using the `-p` or **--publish** option with the docker run command. This option maps a host port to a container port and allows the container to be reached from the host using the host’s IP address and the specified port.
+- You can expose ports in Docker using the `-p` or `--publish` option with the docker run command. This option maps a host port to a container port and allows the container to be reached from the host using the host’s IP address and the specified port.
 #### 23. Can you explain the difference between port mapping and port publishing in Docker?
 - Port mapping refers to the process of mapping a container port to a host port. Port publishing refers to the process of making a container port accessible to external networks by mapping it to a host port. Both port mapping and port publishing allow the container to be reached from the host.
 

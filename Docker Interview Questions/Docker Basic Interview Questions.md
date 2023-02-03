@@ -138,6 +138,7 @@
  <details> 
     <summary><b>22. How do you expose ports in Docker?</b>
    </summary><br>
+  
 - You can expose ports in Docker using the `-p` or `--publish` option with the docker run command. This option maps a host port to a container port and allows the container to be reached from the host using the host’s IP address and the specified port.
 </details>
  

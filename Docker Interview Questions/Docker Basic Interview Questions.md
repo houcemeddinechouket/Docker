@@ -144,6 +144,7 @@
  <details> 
    <summary><b> 23. Can you explain the difference between port mapping and port publishing in Docker?</b>
    </summary><br>
+  
   - Port mapping refers to the process of mapping a container port to a host port. Port publishing refers to the process of making a container port accessible to external networks by mapping it to a host port. Both port mapping and port publishing allow the container to be reached from the host.
 </details>
 

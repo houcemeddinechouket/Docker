@@ -132,6 +132,22 @@ $ docker logs mycontainer
 ```
   </details>
   
+     <details>
+<summary><b>Creating a Docker Image with a Dockerfile
+</b></summary><br>
+  
+```bash
+# Dockerfile
+FROM alpine
+CMD echo "Hello from Docker"
+ ``` 
+```bash
+$ docker build -t myimage .
+
+```
+  </details>
+  
+  
   
   
   

@@ -132,7 +132,7 @@ $ docker logs mycontainer
 ```
   </details>
   
-     <details>
+<details>
 <summary><b>Creating a Docker Image with a Dockerfile
 </b></summary><br>
   
@@ -145,7 +145,7 @@ CMD echo "Hello from Docker"
 $ docker build -t myimage .
 
 ```
-  </details>
+ </details>
   
   
   

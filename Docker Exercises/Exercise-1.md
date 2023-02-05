@@ -46,14 +46,7 @@ $ docker run -v $(pwd)/html:/usr/share/nginx/html nginx
   The -v option mounts a host directory as a data volume in the container.
   </details>
   
-  <details>
-<summary><b>How do you inspect a Docker image?</b></summary><br>
-  
-```bash
-$ docker inspect <image_name>
-```
-  </details>
-  
+ 
   <details>
 <summary><b>Running a Docker Container with a Custom Network and Specifying IP Address</b></summary><br>
   
@@ -80,29 +73,65 @@ $ docker cp mycontainer:/etc/passwd .
 ```bash
 $ docker run --privileged nginx
 ```
+  - The above command runs an Nginx container in privileged mode. The --privileged option gives the container full access to the host machine's resources, including access to all devices.
   </details>
   
   
   <details>
-<summary><b>How do you inspect a Docker image?</b></summary><br>
+<summary><b>Running a Docker Container with a Read-Only File System</b></summary><br>
   
 ```bash
-$ docker inspect <image_name>
+$ docker run --read-only nginx
+```
+  - The above command runs an Nginx container with a read-only file system. The --read-only option makes the container's file system read-only, preventing any changes to the file system from within the container.
+  </details>
+  
+  <details>
+<summary><b>Running a Docker Container with Resource Limits</b></summary><br>
+  
+```bash
+$ docker run --memory 512m --cpus 2 nginx
 ```
   </details>
   
   <details>
-<summary><b>How do you inspect a Docker image?</b></summary><br>
+<summary><b>Creating a Docker Image from a Container</b></summary><br>
   
 ```bash
-$ docker inspect <image_name>
+$ docker run --name mycontainer alpine
+$ docker commit mycontainer myimage
+```
+  - The above command creates an Alpine container with a name mycontainer and then creates an image myimage from the container. The docker commit command creates an image from a container's changes.
+  </details>
+  
+   <details>
+<summary><b>Running a Docker Container with Resource Limits</b></summary><br>
+  
+```bash
+$ docker run --memory 512m --cpus 2 nginx
 ```
   </details>
   
-  <details>
-<summary><b>How do you inspect a Docker image?</b></summary><br>
+   <details>
+<summary><b>Running a Docker Container with a Custom Hostname
+</b></summary><br>
   
 ```bash
-$ docker inspect <image_name>
+$ docker run --hostname customhostname nginx
+
 ```
   </details>
+  
+   <details>
+<summary><b>Inspecting the Logs of a Docker Container</b></summary><br>
+  
+```bash
+$ docker run --name mycontainer alpine echo "Hello from Docker"
+$ docker logs mycontainer
+
+```
+  </details>
+  
+  
+  
+  
